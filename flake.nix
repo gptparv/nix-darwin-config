@@ -29,8 +29,10 @@
             gh
             gh-dash
             ghq
+            gnugrep
             hwatch
             jnv
+            just
             jq
             jqp
             kubelogin

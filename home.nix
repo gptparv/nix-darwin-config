@@ -32,6 +32,7 @@
       push.autoSetupRemote = true;
       alias = {
         sync = "!f() { git fetch origin && git merge origin/main; }; f";
+        dash = "!gh-dash";
       };
     };
   };
@@ -69,6 +70,12 @@
         version = "0.1.2";
         sha256 = "Z22nS9dW1w7L9taO3PkxzQA9tOqsPjQPY17ZMam9M0U=";
       }
+      {
+        name = "supermaven";
+        publisher = "supermaven";
+        version = "1.1.12";
+        sha256 = "/fZungx+wdtKo80KCGZa4WfHMTT6Imb5MBgQ8gAGhfQ=";
+      }
     ]);
 
     userSettings = {
@@ -104,6 +111,10 @@
       {
         "key" = "cmd+shift+j";
         "command" = "workbench.action.terminal.toggleTerminal";
+      }
+      {
+        "key" = "cmd+k cmd+j";
+        "command" = "workbench.action.toggleMaximizedPanel";
       }
     ];
   };

@@ -27,6 +27,7 @@
             dive
             git
             gh
+            gh-dash
             ghq
             hwatch
             jnv

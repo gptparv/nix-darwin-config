@@ -30,7 +30,14 @@
     extraConfig = {
       init.defaultBranch = "main";
       push.autoSetupRemote = true;
+      alias = {
+        sync = "!f() { git fetch origin && git merge origin/main; }; f";
+      };
     };
+  };
+
+  programs.lazygit = {
+    enable = true;
   };
 
   programs.vscode = {
@@ -56,6 +63,12 @@
         version = "3.10.3";
         sha256 = "BkYT9SiziFW97yqU+1lwL5sVK1JQIivFr63eIbDjjhA=";
       }
+      {
+        name = "output-colorizer";
+        publisher = "IBM";
+        version = "0.1.2";
+        sha256 = "Z22nS9dW1w7L9taO3PkxzQA9tOqsPjQPY17ZMam9M0U=";
+      }
     ]);
 
     userSettings = {
@@ -77,5 +90,21 @@
       "workbench.sideBar.location" = "right";
       "zenMode.centerLayout" = false;
     };
+
+    keybindings = [
+      {
+        "key" = "cmd+j";
+        "command" = "workbench.action.terminal.focus";
+      }
+      {
+        "key" = "cmd+j";
+        "command" = "workbench.action.focusActiveEditorGroup";
+        "when" = "terminalFocus";
+      }
+      {
+        "key" = "cmd+shift+j";
+        "command" = "workbench.action.terminal.toggleTerminal";
+      }
+    ];
   };
 }

@@ -38,6 +38,7 @@
             kubelogin
             lazygit
             mkalias
+            mise
             moreutils
             nixpkgs-fmt
             oh-my-posh

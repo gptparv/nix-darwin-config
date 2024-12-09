@@ -94,7 +94,6 @@
       "git.enabled" = false;
       "telemetry.telemetryLevel" = "off";
       "update.showReleaseNotes" = false;
-      "workbench.sideBar.location" = "right";
       "zenMode.centerLayout" = false;
       "[shellscript]" = {
         "editor.defaultFormatter" = "foxundermoon.shell-format";
@@ -120,5 +119,12 @@
         "command" = "workbench.action.toggleMaximizedPanel";
       }
     ];
+  };
+
+  programs.mise = {
+    enable = true;
+    enableZshIntegration = true;
+    globalConfig = builtins.fromTOML (builtins.unsafeDiscardStringContext (builtins.readFile configs/mise.toml));
+    # settings = builtins.fromTOML (builtins.unsafeDiscardStringContext (builtins.readFile configs/mise-settings.toml));
   };
 }

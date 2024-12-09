@@ -1,0 +1,3 @@
+[tools]
+terraform = "1.8.0"
+kubectx = "0.9.5"

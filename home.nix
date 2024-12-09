@@ -31,7 +31,7 @@
       init.defaultBranch = "main";
       push.autoSetupRemote = true;
       alias = {
-        sync = "!f() { git fetch origin && git merge origin/main; }; f";
+        sync = "!git fetch origin && git merge origin/main";
         dash = "!gh-dash";
       };
     };
@@ -96,6 +96,9 @@
       "update.showReleaseNotes" = false;
       "workbench.sideBar.location" = "right";
       "zenMode.centerLayout" = false;
+      "[shellscript]" = {
+        "editor.defaultFormatter" = "foxundermoon.shell-format";
+      };
     };
 
     keybindings = [
@@ -113,7 +116,7 @@
         "command" = "workbench.action.terminal.toggleTerminal";
       }
       {
-        "key" = "cmd+k cmd+j";
+        "key" = "cmd+k j";
         "command" = "workbench.action.toggleMaximizedPanel";
       }
     ];

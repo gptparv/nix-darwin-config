@@ -4,15 +4,15 @@
   programs.home-manager.enable = true;
 
   home = {
-    username = "parvgupta";
-    homeDirectory = "/Users/parvgupta";
+    username = "parv.gupta";
+    homeDirectory = "/Users/parv.gupta";
     stateVersion = "24.11";
   };
 
   programs.zsh = {
     enable = true;
     shellAliases = {
-      switch = "darwin-rebuild switch --flake ~/.config/nix";
+      switch = "darwin-rebuild switch --flake ~/ghq/github.com/gptparv/nix-darwin-config";
     };
   };
 

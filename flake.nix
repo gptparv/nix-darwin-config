@@ -128,26 +128,26 @@
       };
     in
     {
-      darwinConfigurations."Parvs-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+      darwinConfigurations."DEBERL000009-2" = nix-darwin.lib.darwinSystem {
         modules = [
           configuration
           nix-homebrew.darwinModules.nix-homebrew
           {
             nix-homebrew = {
               enable = true;
-              user = "parvgupta";
+              user = "parv.gupta";
             };
           }
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            users.users.parvgupta.home = "/Users/parvgupta";
-            home-manager.users.parvgupta = import ./home.nix;
+            users.users."parv.gupta".home = "/Users/parv.gupta";
+            home-manager.users."parv.gupta" = import ./home.nix;
           }
         ];
       };
 
-      darwinPackages = self.darwinConfiguration."Parvs-MacBook-Pro".pkgs;
+      darwinPackages = self.darwinConfiguration."DEBERL000009-2".pkgs;
     };
 }

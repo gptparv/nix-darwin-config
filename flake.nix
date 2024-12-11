@@ -18,6 +18,7 @@
             act
             actionlint
             appcleaner
+            ansible
             argo
             argocd
             asdf-vm
@@ -37,14 +38,17 @@
             jqp
             kubelogin
             lazygit
+            legitify
             mkalias
             mise
             moreutils
             nixpkgs-fmt
+            notify
             oh-my-posh
             pre-commit
             runme
             safe
+            slack
             shfmt
             shellcheck
             shellharden
@@ -73,6 +77,7 @@
           casks = [
             "keyboardcleantool"
             "vivaldi"
+            "tunnelblick"
           ];
           onActivation = {
             cleanup = "zap";

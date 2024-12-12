@@ -75,6 +75,7 @@
             "code-server"
           ];
           casks = [
+            "displaylink"
             "keyboardcleantool"
             "vivaldi"
             "tunnelblick"
@@ -103,6 +104,11 @@
           finder.FXPreferredViewStyle = "clmv";
           screencapture.location = "~/Pictures/screenshots";
           screensaver.askForPasswordDelay = 10;
+          dock.persistent-apps = [
+            "/Applications/Safari.app"
+            "${pkgs.vscode}/Applications/Visual Studio Code.app"
+            "/Applications/Vivaldi.app"
+          ];
         };
 
         nixpkgs = {

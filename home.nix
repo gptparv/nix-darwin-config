@@ -59,11 +59,13 @@
     enable = true;
     enableUpdateCheck = false;
     enableExtensionUpdateCheck = false;
+    mutableExtensionsDir = false;
     extensions = (with pkgs.vscode-extensions; [
       jnoortheen.nix-ide
       foxundermoon.shell-format
       timonwong.shellcheck
       mads-hartmann.bash-ide-vscode
+      hashicorp.terraform
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "lazygit-vscode";
@@ -75,20 +77,26 @@
         # Runme Notebooks for DevOps
         name = "runme";
         publisher = "stateful";
-        version = "3.10.3";
+        version = "3.10.1733874338";
         sha256 = "BkYT9SiziFW97yqU+1lwL5sVK1JQIivFr63eIbDjjhA=";
-      }
-      {
-        name = "output-colorizer";
-        publisher = "IBM";
-        version = "0.1.2";
-        sha256 = "Z22nS9dW1w7L9taO3PkxzQA9tOqsPjQPY17ZMam9M0U=";
       }
       {
         name = "supermaven";
         publisher = "supermaven";
         version = "1.1.12";
         sha256 = "/fZungx+wdtKo80KCGZa4WfHMTT6Imb5MBgQ8gAGhfQ=";
+      }
+      {
+        name = "catppuccin-vsc-icons";
+        publisher = "Catppuccin";
+        version = "1.1.12";
+        sha256 = "CSAIDlZNrelBf891ztK4n9IaRdtXqpeXnI00hG0/nfA=";
+      }
+      {
+        name = "catppuccin-vsc";
+        publisher = "Catppuccin";
+        version = "1.1.12";
+        sha256 = "eZwi5qONiH+XVZj7u2cjJm+Liv1q07AEd8d4nXEQgLw=";
       }
     ]);
 
@@ -112,6 +120,8 @@
       "[shellscript]" = {
         "editor.defaultFormatter" = "foxundermoon.shell-format";
       };
+      "workbench.colorTheme" = "Catppuccin Mocha";
+      "workbench.iconTheme" = "catppuccin-mocha";
     };
 
     keybindings = [

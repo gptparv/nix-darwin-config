@@ -32,6 +32,7 @@
             ghq
             gnugrep
             hwatch
+            home-manager
             jnv
             just
             jq
@@ -44,10 +45,12 @@
             moreutils
             nixpkgs-fmt
             notify
+            obsidian
             oh-my-posh
             pre-commit
             runme
             safe
+            scorecard
             slack
             shfmt
             shellcheck
@@ -59,6 +62,7 @@
             tree
             treefmt2
             trivy
+            updatecli
             watchman
             watchexec
             vault
@@ -77,6 +81,7 @@
           casks = [
             "displaylink"
             "keyboardcleantool"
+            "syncthing"
             "vivaldi"
             "tunnelblick"
           ];
@@ -89,6 +94,9 @@
 
         services.nix-daemon.enable = true;
         nix.settings.experimental-features = "nix-command flakes";
+        nix.package = pkgs.nix;
+        nix.gc.automatic = true;
+        nix.optimise.automatic = true;
         programs.zsh.enable = true;
         system.configurationRevision = self.rev or self.dirtyRev or null;
         system.stateVersion = 5;
@@ -107,6 +115,7 @@
           dock.persistent-apps = [
             "/Applications/Safari.app"
             "${pkgs.vscode}/Applications/Visual Studio Code.app"
+            "${pkgs.vscode}/Applications/Slack.app"
             "/Applications/Vivaldi.app"
           ];
         };

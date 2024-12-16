@@ -112,7 +112,6 @@
       "files.insertFinalNewline" = true;
       "files.autoSave" = "onFocusChange";
       "diffEditor.ignoreTrimWhitespace" = false;
-      "breadcrumbs.enabled" = false;
       "git.enabled" = false;
       "telemetry.telemetryLevel" = "off";
       "update.showReleaseNotes" = false;

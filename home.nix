@@ -77,7 +77,7 @@
         # Runme Notebooks for DevOps
         name = "runme";
         publisher = "stateful";
-        version = "3.10.1733874338";
+        version = "3.10.1734452324";
         sha256 = "BkYT9SiziFW97yqU+1lwL5sVK1JQIivFr63eIbDjjhA=";
       }
       {

@@ -115,7 +115,8 @@
           dock.persistent-apps = [
             "/Applications/Safari.app"
             "${pkgs.vscode}/Applications/Visual Studio Code.app"
-            "${pkgs.vscode}/Applications/Slack.app"
+            "${pkgs.slack}/Applications/Slack.app"
+            "Applications/Microsoft Teams.app"
             "/Applications/Vivaldi.app"
           ];
         };

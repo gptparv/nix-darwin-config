@@ -24,6 +24,7 @@
             asdf-vm
             atmos
             azure-cli
+            bashly
             direnv
             dive
             git
@@ -79,7 +80,9 @@
             "code-server"
           ];
           casks = [
+            "discord"
             "displaylink"
+            "flux"
             "keyboardcleantool"
             "syncthing"
             "vivaldi"

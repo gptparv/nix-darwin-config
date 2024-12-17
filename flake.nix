@@ -78,6 +78,8 @@
           enable = true;
           brews = [
             "code-server"
+            "localstack/tap/localstack-cli"
+            "podman"
           ];
           casks = [
             "discord"
@@ -119,7 +121,7 @@
             "/Applications/Safari.app"
             "${pkgs.vscode}/Applications/Visual Studio Code.app"
             "${pkgs.slack}/Applications/Slack.app"
-            "Applications/Microsoft Teams.app"
+            "/Applications/Microsoft Teams.app"
             "/Applications/Vivaldi.app"
           ];
         };

@@ -14,6 +14,9 @@
     shellAliases = {
       switch = "darwin-rebuild switch --flake ~/ghq/github.com/gptparv/nix-darwin-config";
     };
+    initExtra = ''
+      export PATH="/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
+    '';
   };
 
   programs.direnv = {
@@ -66,6 +69,8 @@
       timonwong.shellcheck
       mads-hartmann.bash-ide-vscode
       hashicorp.terraform
+      ms-python.python
+      ms-toolsai.jupyter
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "lazygit-vscode";
@@ -77,7 +82,7 @@
         # Runme Notebooks for DevOps
         name = "runme";
         publisher = "stateful";
-        version = "3.10.1734452324";
+        version = "3.10.1734722889";
         sha256 = "BkYT9SiziFW97yqU+1lwL5sVK1JQIivFr63eIbDjjhA=";
       }
       {

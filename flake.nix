@@ -80,6 +80,7 @@
             "code-server"
             "localstack/tap/localstack-cli"
             "podman"
+            "uv"
           ];
           casks = [
             "discord"

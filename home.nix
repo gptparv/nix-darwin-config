@@ -83,7 +83,7 @@
         name = "runme";
         publisher = "stateful";
         version = "3.10.1734722889";
-        sha256 = "BkYT9SiziFW97yqU+1lwL5sVK1JQIivFr63eIbDjjhA=";
+        sha256 = "BFy3ecTj8b8Zu1FJcIRYXJm870tgAdDYYNlikvdTogk=";
       }
       {
         name = "supermaven";

@@ -32,8 +32,9 @@
             gh-dash
             ghq
             gnugrep
-            hwatch
+            helix
             home-manager
+            hwatch
             jnv
             just
             jq
@@ -79,13 +80,16 @@
           brews = [
             "code-server"
             "localstack/tap/localstack-cli"
+            "helm"
             "podman"
+            "starship"
             "uv"
           ];
           casks = [
             "discord"
             "displaylink"
             "flux"
+            "ghostty"
             "keyboardcleantool"
             "syncthing"
             "vivaldi"
@@ -124,6 +128,8 @@
             "${pkgs.slack}/Applications/Slack.app"
             "/Applications/Microsoft Teams.app"
             "/Applications/Vivaldi.app"
+            "/Applications/Zen Browser.app"
+            "${pkgs.obsidian}/Applications/Obsidian.app"
           ];
         };
 

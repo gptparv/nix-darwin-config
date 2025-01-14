@@ -13,6 +13,7 @@
     enable = true;
     shellAliases = {
       switch = "darwin-rebuild switch --flake ~/ghq/github.com/gptparv/nix-darwin-config";
+      cd = "z";
     };
     initExtra = ''
       export PATH="/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
@@ -33,10 +34,29 @@
     enable = true;
     enableZshIntegration = true;
   };
-  programs.oh-my-posh = {
+  # programs.oh-my-posh = {
+  #   enable = true;
+  #   enableZshIntegration = true;
+  #   settings = builtins.fromTOML (builtins.unsafeDiscardStringContext (builtins.readFile configs/oh-my-posh.toml));
+  # };
+
+  programs.starship = {
     enable = true;
-    enableZshIntegration = true;
-    settings = builtins.fromTOML (builtins.unsafeDiscardStringContext (builtins.readFile configs/oh-my-posh.toml));
+    # Configuration written to ~/.config/starship.toml
+    settings = {
+      add_newline = false;
+
+      character = {
+        success_symbol = "[➜](bold green)";
+        error_symbol = "[➜](bold red)";
+      };
+
+      azure = {
+        disabled = false;
+        symbol = "[󰠅 ](bold blue)";
+        format = "on [$symbol($subscription)]($style) ";
+      };
+    };
   };
 
   programs.git = {
@@ -82,8 +102,8 @@
         # Runme Notebooks for DevOps
         name = "runme";
         publisher = "stateful";
-        version = "3.10.1734722889";
-        sha256 = "BFy3ecTj8b8Zu1FJcIRYXJm870tgAdDYYNlikvdTogk=";
+        version = "3.10.1736182724";
+        sha256 = "MMUiwI32YrIE2kaKr4ynFuJIaKHDmSjNP2TUbZUZEbw=";
       }
       {
         name = "supermaven";
@@ -117,7 +137,6 @@
       "files.insertFinalNewline" = true;
       "files.autoSave" = "onFocusChange";
       "diffEditor.ignoreTrimWhitespace" = false;
-      "git.enabled" = false;
       "telemetry.telemetryLevel" = "off";
       "update.showReleaseNotes" = false;
       "zenMode.centerLayout" = false;

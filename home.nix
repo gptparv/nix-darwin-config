@@ -17,6 +17,7 @@
     };
     initExtra = ''
       export PATH="/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
+      export PATH="$HOME/.krew/bin:$PATH"
     '';
   };
 

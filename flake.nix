@@ -39,6 +39,8 @@
             just
             jq
             jqp
+            k3d
+            krew
             kubelogin
             lazygit
             legitify
@@ -81,16 +83,19 @@
             "code-server"
             "localstack/tap/localstack-cli"
             "helm"
-            "podman"
+            "helm-docs"
+            "ollama"
             "starship"
             "uv"
           ];
           casks = [
+            "docker"
             "discord"
             "displaylink"
             "flux"
             "ghostty"
             "keyboardcleantool"
+            "ollama"
             "syncthing"
             "vivaldi"
             "tunnelblick"

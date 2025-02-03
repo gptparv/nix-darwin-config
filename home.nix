@@ -35,11 +35,6 @@
     enable = true;
     enableZshIntegration = true;
   };
-  # programs.oh-my-posh = {
-  #   enable = true;
-  #   enableZshIntegration = true;
-  #   settings = builtins.fromTOML (builtins.unsafeDiscardStringContext (builtins.readFile configs/oh-my-posh.toml));
-  # };
 
   programs.starship = {
     enable = true;
@@ -96,32 +91,26 @@
       {
         name = "lazygit-vscode";
         publisher = "tompollak";
-        version = "0.1.10";
-        sha256 = "jtupi/M0yQKBNABWglnoJp54P7OM0bGLWjsxbL15Va8=";
+        version = "0.1.12";
+        sha256 = "MEJl9EIWKc/Gr7ECMrkNSY9md4JfA2BG/kY0RuykFBI=";
       }
       {
         # Runme Notebooks for DevOps
         name = "runme";
         publisher = "stateful";
-        version = "3.10.1736182724";
-        sha256 = "MMUiwI32YrIE2kaKr4ynFuJIaKHDmSjNP2TUbZUZEbw=";
-      }
-      {
-        name = "supermaven";
-        publisher = "supermaven";
-        version = "1.1.12";
-        sha256 = "/fZungx+wdtKo80KCGZa4WfHMTT6Imb5MBgQ8gAGhfQ=";
+        version = "3.11.1738099233";
+        sha256 = "dr2Ue2/v3OxUQXqvBZieHNMk7hP2wF9VEPkH8uo5okE=";
       }
       {
         name = "catppuccin-vsc-icons";
         publisher = "Catppuccin";
-        version = "1.1.12";
+        version = "1.17.0";
         sha256 = "CSAIDlZNrelBf891ztK4n9IaRdtXqpeXnI00hG0/nfA=";
       }
       {
         name = "catppuccin-vsc";
         publisher = "Catppuccin";
-        version = "1.1.12";
+        version = "3.16.0";
         sha256 = "eZwi5qONiH+XVZj7u2cjJm+Liv1q07AEd8d4nXEQgLw=";
       }
     ]);

@@ -84,7 +84,6 @@
             "localstack/tap/localstack-cli"
             "helm"
             "helm-docs"
-            "ollama"
             "starship"
             "uv"
           ];
@@ -97,7 +96,7 @@
             "keyboardcleantool"
             "ollama"
             "syncthing"
-            "vivaldi"
+            "ticktick"
             "tunnelblick"
           ];
           onActivation = {

@@ -7,8 +7,8 @@ NIX_FILE="home.nix"
 EXTENSIONS=(
   "tompollak.lazygit-vscode"
   "stateful.runme"
-  "IBM.output-colorizer"
-  "supermaven.supermaven"
+  "Catppuccin.catppuccin-vsc-icons"
+  "Catppuccin.catppuccin-vsc"
 )
 
 get_latest_version() {

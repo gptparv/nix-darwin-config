@@ -87,6 +87,7 @@
       hashicorp.terraform
       ms-python.python
       ms-toolsai.jupyter
+      charliermarsh.ruff
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "lazygit-vscode";

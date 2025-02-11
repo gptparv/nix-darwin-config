@@ -84,8 +84,10 @@
             "localstack/tap/localstack-cli"
             "helm"
             "helm-docs"
+            "mysql"
             "starship"
             "uv"
+            "watch"
           ];
           casks = [
             "docker"
@@ -94,7 +96,7 @@
             "flux"
             "ghostty"
             "keyboardcleantool"
-            "ollama"
+            # "ollama"
             "syncthing"
             "ticktick"
             "tunnelblick"
@@ -131,7 +133,6 @@
             "${pkgs.vscode}/Applications/Visual Studio Code.app"
             "${pkgs.slack}/Applications/Slack.app"
             "/Applications/Microsoft Teams.app"
-            "/Applications/Vivaldi.app"
             "/Applications/Zen Browser.app"
             "${pkgs.obsidian}/Applications/Obsidian.app"
           ];

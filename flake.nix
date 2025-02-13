@@ -96,8 +96,8 @@
             "flux"
             "ghostty"
             "keyboardcleantool"
-            # "ollama"
             "syncthing"
+            "pgadmin4"
             "ticktick"
             "tunnelblick"
           ];
